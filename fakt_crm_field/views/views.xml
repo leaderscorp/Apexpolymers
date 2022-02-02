@@ -1,0 +1,42 @@
+<odoo>
+
+    <!--        <xpath expr="//field[@name='email_from']" position="after">-->
+    <!--            <field name="secondary_email"/>-->
+    <!--        </xpath>-->
+    <record model="ir.ui.view" id="crm_custom_field_id">
+        <field name="name">crm_custom_field_id</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet//group[1]//group[2]//div[1]" position="after">
+                <field name="secondary_email" widget="email"/>
+
+
+            </xpath>
+
+            <xpath expr="//notebook//page[3]//group[1]//group[1]//div[1]" position="after">
+                <field name="fax"/>
+            </xpath>
+
+            <xpath expr="//notebook//page[3]//group[1]//group[2]" position="inside">
+                <field name="secondary_mobile" widget="phone"/>
+                <field name="industry_name"/>
+                <field name="selector"/>
+            </xpath>
+
+            <xpath expr="//notebook//page[3]//group[1]//group[3]//field[@name='source_id']" position="before">
+                <field name="exhibitor_contact_status"/>
+                <field name="exhibitor_group_name"/>
+
+            </xpath>
+
+             <xpath expr="//notebook//page[3]//group[1]//group[3]//field[@name='source_id']" position="attributes">
+                    <attribute name="string" >Exhibitor Contact Source</attribute>
+
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>
