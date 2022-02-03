@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_fakt_crm_field_fakt_crm_field,fakt_crm_field.fakt_crm_field,model_fakt_crm_field_fakt_crm_field,base.group_user,1,1,1,1
 access_exhibitor_group_name,exhibitor.group.name,model_exhibitor_group_name,base.group_user,1,1,1,1
+access_industry_name,industry.name,model_industry_name,base.group_user,1,1,1,1
+access_sector_name,sector.name,model_sector_name,base.group_user,1,1,1,1

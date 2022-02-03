@@ -21,13 +21,13 @@
 
             <xpath expr="//notebook//page[3]//group[1]//group[2]" position="inside">
                 <field name="secondary_mobile" widget="phone"/>
-                <field name="industry_name"/>
-                <field name="selector"/>
+                <field name="industry_name" widget="many2many_tags"/>
+                <field name="sector" widget="many2many_tags" />
             </xpath>
 
             <xpath expr="//notebook//page[3]//group[1]//group[3]//field[@name='source_id']" position="before">
                 <field name="exhibitor_contact_status"/>
-                <field name="exhibitor_group_name"/>
+                <field name="exhibitor_group_name" widget="many2many_tags" />
 
             </xpath>
 
