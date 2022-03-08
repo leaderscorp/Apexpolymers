@@ -38,9 +38,9 @@ class fakt_crm_field(models.Model):
     # selector = fields.Many2one("crm.lead", string="Sector")
 
 
-    exhibitor_group_name = fields.Many2one('exhibitor.group.name', string='Exhibitor Group Name')
-    industry_name = fields.Many2one('industry.name', string='Industry')
-    sector = fields.Many2one('sector.name',  string='Sector')
+    exhibitor_group_name = fields.Many2many('exhibitor.group.name', string='Exhibitor Group Name')
+    industry_name = fields.Many2many('industry.name', string='Industry')
+    sector = fields.Many2many('sector.name',  string='Sector')
 
 
 
